@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(59, 89, 152);
+}
+
+#logo{
+  margin-top: 20px;
+  margin-left: 80px;
+  height: 80px;
+  width: 700px;
+  background-image: url("webimages/facebook-logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav ul{
+  display: flex;
+  height: 100px;
+  width: 700px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+nav ul li{
+  margin-left: 50px;
+  display: inline;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+#major-part{
+  display: flex; /* only to fix margin collapsing, can use overflow : hidden or display : inline-block too */
+  height: 700px;
+  width : 100%;
+  background-color: rgb(237, 240, 245);
+}
+
+.sign-up-form{
+  margin-top: 100px;
+  height: 600px;
+  width: 500px;
+}
+
+.photos-collection{
+  margin-top: 100px;
+  height: 600px;
+  width: 700px;
+}
+
+.picture-box{
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 10px;
+  height: 200px;
+  width: 200px;
+  box-shadow: 5px 5px 5px #888888; /* x-axis y-axis z-axis color*/
+}
+
+#user1{
+  display: flex;
+  height: 200px; /* height, width inherit*/
+  width: 200px;
+  background-image: url("webimages/user1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#user1:hover .profile-name{
+  visibility: visible;
+}
+
+#user2{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-image: url("webimages/user3.jpg");
+  background-size: cover;
+}
+
+#user2:hover .profile-name{
+  visibility: visible;
+}
+
+#user3{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-image: url("webimages/user4.jpg");
+  background-size: cover;
+}
+
+#user3:hover .profile-name{
+  visibility: visible;
+}
+
+#user4{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-image: url("webimages/user5.jpg");
+  background-size: cover;
+}
+
+#user4:hover .profile-name{
+  visibility: visible;
+}
+
+.profile-name{
+  box-shadow: 5px 5px 5px #888888;
+  visibility: hidden;
+  margin-top: 150px;
+  height: 50px;
+  width: inherit;
+  background-color: white;
+}
+
+.profile-name-written{
+  /*margin-left: 80px;*/
+  text-align: center;
+  font-family: cursive;
+}
