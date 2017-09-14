@@ -1,0 +1,120 @@
+.row-header{
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.row-content{
+  margin: 0px auto;
+  padding: 50px 0px 0px 0px;
+}
+
+.row-footer{
+  background-color: #E9EBEE;
+  margin: 0px auto;
+  padding: 20px 0px 0px 0px;
+}
+
+.jumbotron{
+  height: 520px !important;
+  background-image: linear-gradient(rgba(30, 30, 30, 0.2), rgba(155, 30, 30, 0.25)), url('../img/jumbo_header.jpg') !important;
+  margin-bottom: : 10px;
+  background: #E9EBEE;
+  color:black;
+}
+
+address{
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+body{
+  align:center;
+  padding: 50px 0px 50px 0px;
+  background: #f2f4f7;
+}
+
+.navbar-inverse{
+  background: #3B5998;
+  color: floralwhite;
+  height: auto;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+  color:#F7F8FC;
+  background: #3B5998;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus{
+  color:#F7F8FC;
+  background: #3B5998;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu{
+  background-color: #3B5998;
+  color: #F7F8FC;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li{
+  color: #3B5998;
+}
+
+.tab-content{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+}
+
+.side{
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+
+.dp{
+    position: absolute;
+    margin-top: 26.5em;
+    display: inline-block;
+}
+.dp-img{
+    width: 172px;
+    border: 5px;
+    border-color: #EDEDED;
+    border-style: solid;
+    display: inline-block;
+}
+.dp a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.3rem;
+    margin-left: 1.7rem; /* rem - root font size margin*/
+}
+.srch-bar{
+    width: 156px !important;
+}
+.affix{
+    min-width: 18%;
+    max-width: 18%;
+    bottom: 30%;
+    z-index: -1;
+}
+.glyphicon{
+ margin-right:10px;
+ }
+
+@media only screen and (max-width: 768px) {
+    .affix{
+        position: static;
+        min-width: 100%;
+        bottom: 16em;
+    }
+}
+
+.label{
+    background-color: #337ab7;
+}
