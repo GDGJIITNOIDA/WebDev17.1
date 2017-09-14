@@ -1,0 +1,45 @@
+/*To provide top padding to the middle section.. run the code once without this.. you'll see the difference yourself..*/
+.row-content{
+  margin: 0px auto;
+  padding: 50px 0px 0px 0px;
+}
+
+/* jumbotron styling according to my wish */
+.jumbotron{
+  padding: 50px 30px 70px 30px;
+  margin: 0px auto;
+  background: #E9EBEE;
+  color:black;
+}
+/* styling the body */
+body{
+  align:center;
+  padding: 50px 0px 0px 0px;
+  background: #f2f4f7;
+}
+/* Change the color of navbar to blue */
+.navbar-inverse{
+  background: #3B5998;
+  color: floralwhite;
+}
+/* Styling the active class */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+  color:#F7F8FC;
+  background: #3B5998;
+}
+
+/* Styling the dropdown list adding blue color to it ...*/
+.navbar-inverse .navbar-nav .dropdown-menu> li> a:hover,
+.navbar-inverse .navbar-nav .dropdown-menu{
+  background-color: #3B5998;
+  color: black;
+}
+/* Styling the tabs content according to our choice.. Try changing them to observe the differences */
+.tab-content{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+}
