@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Facebook</title>
+  <link rel="icon" href="favicon.png" sizes="16x16" type="image">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
+  <!-- Include your own css at last -->
+  <link href="css/mystyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Default navigation bar ... Uncomment and try changing it to inverse for a better understanding -->
+
+  <!-- <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+  <!-- Navigation bar with inverse and fixed top.. i.e. fix it to top even after scroll -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Navigation bar header -->
+      <div class="navbar-header">
+
+        <!-- Make the button that work and collapse the navbar and on click displays the navbar.. -->
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span> <!-- For screen readers only -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Facebook logo-->
+
+         <a class="navbar-brand" href="#"><font size="6" color="white">facebook</font></a>
+      </div>
+
+
+      <!-- Making navbar its list -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <!-- making an unordered list but alligning it one straight line using nav navbar-nav -->
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"> <!-- active class displays that particular section on reloading.. -->
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a><!-- span is used to style a particular element and glyphicons are used with direct class name to add a small image representing the text eg. home -->
+          </li>
+          <li><a href="#">About</a></li>
+
+          <li><a href="#">Posts</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+        <!-- unordered list of the right side using navbar-right -->
+        <ul class="nav navbar-nav navbar-right">
+          <!-- Making a dropdown without using select tag -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Settings<span class="caret"></span></a> <!-- Caret is a predefined class which adds a donward facing arrow on dropdowns -->
+              <!-- Making dropdown contents using dropdown-menu-->
+            <ul class="dropdown-menu">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Password</a></li>
+              <!-- A thin line to separate the list in two parts using divider class -->
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header"><font color="white">Specials</font></li>
+              <li><a href="#">Preferences</a></li>
+              <li><a href="#">LogOut</a></li>
+            </ul>
+          </li>
+            <li><a href="#">
+              <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login</a><!-- span is used to style a particular element and glyphicons are used with direct class name to add a small image representing the text eg. home -->
+            </li>
+      </ul>
+      </div>
+
+    </div>
+  </nav>
+<!-- navigation bar ends -->
+
+  <!-- jumbotron help to give the main deatils or focus of company's products... -->
+  <header class="jumbotron ">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <p style="padding:10px;"></p>
+          <img src="img/GwFs3_KxNjS.png" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <p style="padding:25px;"></p>
+          <p>Helps you connect and share with the people in your life.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <!-- main body -->
+
+
+  <div class="container main">
+
+
+    <!--  Left Section-->
+
+    <div class="col-xs-12 col-sm-3">
+
+      <!-- to be taught tomorrow -->
+
+    </div>
+
+
+<!--  Middle Section-->
+    <div class="col-xs-12 col-sm-6">
+      <!-- row gives us 12 boxes as explainer..  and row-content is my own defined class to style the tabs according to me its css is included in mystyle.css -->
+      <div class="row row-content">
+
+
+          <div class="col-xs-12 col-sm-12">
+
+            <!-- To link to the Tab content through id and present them in tab form using presentation role -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#post" aria-controls="home" role="tab" data-toggle="tab">Create Post</a>
+              <li role="presentation"><a href="#photo" aria-controls="profile" role="tab" data-toggle="tab">Photo/Video</a></li>
+              <li role="presentation"><a href="#live" aria-controls="messages" role="tab" data-toggle="tab">Live Video</a></li>
+            </ul>
+            <!-- Contents to be added in different tabs using tabpanel role -->
+
+            <div class="tab-content">
+              <!-- First Tab content -->
+              <div role="tabpanel" class="tab-pane fade in active" id="post">
+                <!-- Role of media..Aligns by default image to left and text to right -->
+                <div class="media">
+                  <div class="media-left media-middle">
+                    <a href="#">
+                      <!-- making image responsive -->
+                      <img class="media-object img-thumbnail" src="img/profile.jpg" height="100" width="80" alt="Akshita">
+                    </a>
+                  </div>
+
+                  <div class="media-body">
+                    <h4 class="media-heading">Akshita Bansal </h4>
+                    <p>What's on your mind?</p>
+                    <!-- Labels used to specify additional information about something..can be danger, primary, secondary etc too.. -->
+                    <p><span class="label label-danger label-xs">Feeling</span>&#09;<span class="label label-info label-xs">Photo/Video</span>
+                      <!-- button can also be primary, secondary, danger, success etc... Moreover tooltip data-toggle is added to display a dialogue on hover -->
+                    <a type="button" class="btn btn-primary btn-xs pull-right" data-toggle="tooltip" title="Publish" data-placement="bottom" href="#">Publish</a></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Second tab content -->
+              <div role="tabpanel" class="tab-pane fade in" id="photo">
+                <span class="label label-success label-xs">Add photo</span>&#09;<span class="label label-primary label-xs">Add Video</span>
+                <button type="button" class="btn btn-secondary btn-xs pull-right" data-toggle="tooltip" title="Publish" data-placement="bottom">Publish</a>
+              </div>
+              <!-- Third tab content -->
+              <div role="tabpanel" class="tab-pane fade in" id="live">
+                <span class="label label-info label-xs">Click to add live video!</span>
+                <a type="button" class="btn btn-danger btn-xs pull-right" data-toggle="tooltip" title="Publish" href="#">Publish</a>
+              </div>
+            </div>
+          </div>
+          <!-- Tabs end -->
+        </div>
+      </div>
+      <!-- Middle Section ends -->
+
+
+      <!--  Third Section  -->
+      <div class="col-xs-12 col-sm-3">
+            <!-- To be covered tomorrow -->
+      </div>
+      <!-- Third Section ends -->
+    </div>
+    <!-- Main body ends -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!--Jquery code for tooltip using its attribute data-toggle -->
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
+  <!-- tooltip ends -->
+</body>
+</html>
