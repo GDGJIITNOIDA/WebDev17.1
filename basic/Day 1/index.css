@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(59, 89, 152);
+}
+
+#logo{
+  margin-top: 20px;
+  margin-left: 80px;
+  height: 80px;
+  width: 700px;
+  background-image: url("webimages/facebook-logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav ul{
+  display: flex;
+  height: 100px;
+  width: 700px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+nav ul li{
+  margin-left: 50px;
+  display: inline;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
